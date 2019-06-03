@@ -1,33 +1,103 @@
-.App {
-  text-align: center;
+/* Box-sizing-model */
+
+*,
+*:before,
+*:after {
+ box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* Responsive images */
+
+img {
+ max-width: 100%;
+ height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Cursor change on hover on Buttons */
+
+input[type="submit"],
+button {
+ cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* A better looking default horizontal rule */
+
+hr {
+ display: block;
+ height: 0.1em;
+ border: 0;
+ border-top: 0.1em solid #ccc;
+ margin: 1em 0;
+ padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Allow only vertical resizing of textareas */
+
+textarea {
+ resize: vertical;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix::before,
+.clearfix::before {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* Browser Upgrade Prompt */
+
+.browser-upgrade {
+ margin: 0.5em;
+ padding: 2em 1em;
+ background-color: #ed1f46;
+ color: #fff;
+}
+
+.browser-upgrade__link {
+   color: #fff;
+   font-weight: 800;
+ }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+   font-weight: normal;
+}
+
+p {
+   margin: 0;
+}
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+a {
+ text-decoration: none;
+}
+
+ul { 
+ padding: 0; 
+ margin: 0; 
+ list-style: none; 
 }

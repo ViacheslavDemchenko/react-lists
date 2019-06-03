@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './components/first-list.css';
+import './components/second-list.css';
+import './components/capsules-table.css';
+import FruitsListFirst from './components/FruitsListFirst';
+import FruitsListSecond from './components/FruitsListSecond';
+import UserList from './components/UserList';
+import CapsuleTable from './components/CapsulesTable';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <div className="container">
+        <FruitsListFirst />
+        <FruitsListSecond />
+        <UserList />
+        <CapsuleTable />
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;

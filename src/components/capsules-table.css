@@ -1,0 +1,23 @@
+.capsules-table__title {
+    margin: 10px 0 20px 0;
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+th,
+td {
+    text-align: center;
+}
+
+th {
+    background-color: #B0C4DE;
+}
+
+td {
+    border-bottom: 1px solid #000;
+}
+
+tr:nth-child(even) {
+    background-color: #F0F8FF;
+}
