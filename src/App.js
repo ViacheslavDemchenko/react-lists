@@ -1,12 +1,9 @@
 import React from 'react';
 import './App.css';
-import './components/first-list.css';
-import './components/second-list.css';
-import './components/capsules-table.css';
-import FruitsListFirst from './components/FruitsListFirst';
-import FruitsListSecond from './components/FruitsListSecond';
-import UserList from './components/UserList';
-import CapsuleTable from './components/CapsulesTable';
+import FruitsListFirst from './components/FruitsListFirst/FruitsListFirst';
+import FruitsListSecond from './components/FruitsListSecond/FruitsListSecond';
+import UserList from './components/UserList/UserList';
+import CapsuleTable from './components/CapsulesList/CapsulesTable';
 
 
 function App() {

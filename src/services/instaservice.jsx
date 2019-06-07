@@ -13,25 +13,25 @@ export default class instaService {
         return res.json();
     }
 
-    getAllPosts = async () => {
+    getAllCapsules = async () => {
         const res = await this.getResource('capsules/');
         return res;
     }
 
     getAllPhotos = async () => {
         const res = await this.getResource('capsules/');
-        return res.map(this._transformPosts);
+        return res.map(this._transformData);
     }
 
-    _transformPosts = (capsules) => {
+    _transformData = (capsules) => {
         return {
             capsule_serial: capsules.capsule_serial,
             capsule_id: capsules.capsule_id,
             status: capsules.status,
             original_launch: capsules.original_launch,
             original_launch_unix: capsules.original_launch_unix,
-            missions_name: capsules.missions[0].name,
-            missions_flight: capsules.missions.flight,
+            missions_name: capsules[0].missions[0].name,
+            missions_flight: capsules[0].missions[0].flight,
             landings: capsules.landings,
             type: capsules.type,
             details: capsules.details,

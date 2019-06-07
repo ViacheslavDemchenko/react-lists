@@ -1,20 +1,20 @@
-.list-second-wrap {
+.listSecondWrap {
     width: 100%;
     padding: 20px 30px;
     background-color: grey;
 }
 
-.list-second {
+.listSecond {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.list-second__title::first-letter {
+.listSecondTitle::first-letter {
     text-transform: capitalize;
 }
 
-.list-second__item {
+.listSecondItem {
     flex-basis: 20%;
     text-align: center;
     font-family: "Ubuntu";

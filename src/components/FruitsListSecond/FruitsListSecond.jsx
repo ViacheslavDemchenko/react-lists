@@ -1,4 +1,5 @@
 import React from 'react';
+import s from './FruitsistSecond.module.css';
 
 export default function FruitsListSecond() {
   const list = {
@@ -13,17 +14,17 @@ export default function FruitsListSecond() {
     }
 
   const fruitsList = list.fruits.map( (fruit, index) => 
-                    <li className="list-second__item" key={index}>
+                    <li className={s.listSecondItem} key={index}>
                       <img src={fruit.url} alt={fruit.name} width="150" height="100"></img>
-                      <p className="list-second__title">{fruit.name}</p>
+                      <p className={s.listSecondTitle}>{fruit.name}</p>
                     </li>
   )
 
   
 
   return (
-    <div className="list-second-wrap">
-      <ul className="list-second">
+    <div className={s.listSecondWrap}>
+      <ul className={s.listSecond}>
         {fruitsList}
       </ul>
     </div> 

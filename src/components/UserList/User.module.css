@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.users__title {
+.usersTitle {
     margin: 10px 0 20px 0;
     font-family: "Roboto";
     font-size: 36px;
@@ -10,14 +10,14 @@
     text-align: center;
 }
 
-.users-list {
+.usersList {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.users-list__card {
+.usersListCard {
     flex-basis: 33.3333%;
     min-width: 280px;
     max-width: 380px;
@@ -28,7 +28,7 @@
     box-shadow: 0 3px 1px 1px rgba(192, 192, 192, 0.8);
 }
 
-.users-list__card-title {
+.usersListCardTitle {
     text-align: center;
     margin-bottom: 10px;
     font-family: "Roboto";
@@ -36,20 +36,20 @@
     font-weight: 400;
 }
 
-.card-text {
+.cardText {
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 800;
     font-style: italic;
 }
 
-.card-block__title {
+.cardBlockTitle {
     margin: 10px 0 5px 0;;
     font-family: "Roboto";
     font-size: 18px;
     font-weight: 600;
 }
 
-.card-block {
+.cardBlock {
     margin: 10px 0;
 }

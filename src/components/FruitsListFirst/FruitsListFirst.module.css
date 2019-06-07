@@ -1,11 +1,11 @@
-.list-first-wrap {
+.listFirstWrap {
     width: 100%;
     padding: 20px 30px;
     margin-bottom: 30px;
     background-color: aliceblue;
 }
 
-.list-first {
+.listFirst{
     width: inherit;
     display: flex;
     flex-wrap: wrap;
@@ -13,11 +13,11 @@
     align-items: center;
 }
 
-.list-first__item::first-letter {
+.listFirst::first-letter {
     text-transform: capitalize;
 }
 
-.list-first__item {
+.listFirstItem {
     font-family: "Ubuntu";
     font-weight: 400;
     font-size: 18px;

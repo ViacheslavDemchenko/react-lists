@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import InstaService from '../services/instaservice';
-import ErrorMessage from './ErrorMessage';
+import InstaService from '../../services/instaservice';
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import Capsule from './Capsule';
+import s from './Capsules.module.css';
 
 export default class CapsuleTable extends Component {
     InstaService = new InstaService();
@@ -11,16 +12,16 @@ export default class CapsuleTable extends Component {
     }
 
     componentDidMount() {
-        this.updatePosts();
+        this.updateData();
     }
 
-    updatePosts() {
-        this.InstaService.getAllPosts()
-        .then(this.onPostsLoaded)
+    updateData() {
+        this.InstaService.getAllCapsules()
+        .then(this.onDataLoaded)
         .catch(this.onError)
     }
 
-    onPostsLoaded = (capsules) => {
+    onDataLoaded = (capsules) => {
         this.setState({
             capsules
         })
@@ -74,8 +75,8 @@ export default class CapsuleTable extends Component {
         const items = this.renderItems(capsules);
 
         return (
-            <table className="capsules-table">
-                <caption className="capsules-table__title">Таблица запуска капсул</caption>
+            <table className={s.capsulesTable}>
+                <caption className={s.capsulesTableTitle}>Таблица запуска капсул</caption>
                 <thead>
                     <tr>
                         <th>Серийный номер</th>
